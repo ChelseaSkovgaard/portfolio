@@ -15,16 +15,21 @@ header {
   z-index: 900;
 }
 
+h1{
+  display:inline-block;
+  color: green;
+  padding: 10px;
+  font-size: 30px;
+}
+
 h2 {
   font-weight: bold;
   text-align: center;
-  font: bold 50px;
   margin: 20px;
+  color: black;
+  font-size: 30px;
 }
 
-h1{
-  display:inline-block;
-}
 
 h3 {
   font-weight: bold;
@@ -35,6 +40,11 @@ h3 {
 header li {
   display: inline-block;
   padding: 10px;
+}
+
+header img {
+  height:50px;
+  width: 300px;
 }
 
 nav {
@@ -82,13 +92,21 @@ a:hover {
   display: inline-block;
   color: white;
 }
+.projects a {
+  height: 50px;
+  display: inline-block;
+}
+
+section.projects {
+  position: relative;
+}
 
 .three-col {
   width: 30%;
   display: inline-block;
   text-align: center;
   vertical-align: top;
-  margin: 50px 10px;
+  margin: 10px 10px;
   color: #EFEFEF;
 }
 
@@ -105,14 +123,16 @@ a:hover {
 }
 
 .three-col:hover h3{
-  display:block;
-  position:relative;
+  display:inline-block;
+  position:absolute;
   text-align:center;
+  vertical-align: top;
   top: 125px;
-  background-color: pink;
+  background-color: black;
+  margin: 50px 50px;
+  border-radius: 50%;
+  width: 200px;
 }
-
-
 
 .projects {
   width: 100%;
