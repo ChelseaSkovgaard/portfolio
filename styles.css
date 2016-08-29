@@ -150,6 +150,16 @@ section.projects {
   text-align: center;
 }
 
+#wrapper .text {
+  position: relative;
+  visibility: hidden;
+  bottom: 100px;
+}
+
+#wrapper:hover .text {
+  visibility:visible;
+}
+
 .three-col {
   width: 30%;
   display: inline-block;
@@ -211,6 +221,10 @@ section.experience-skills {
 
 footer {
   text-align: center;
+}
+
+footer article {
+  margin-bottom: 50px;
 }
 
 footer li {
