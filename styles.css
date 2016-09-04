@@ -1,3 +1,8 @@
+/*Color Palette:
+Deep Green: #2C5214;
+Plants: #5C821A;
+New Growth: #C6D166;
+*/
 body {
   background-color: #EFEFEF;
   font-family: 'Source Sans Pro', sans-serif;
@@ -6,29 +11,34 @@ body {
 }
 
 header {
+  display:flex;
+  align-items: center;
   background-color: #EFEFEF;
-  border-bottom: 5px solid dimgray;
-  height: 50px;
+  border-bottom: 5px solid #0F1B07;
+  height: 70px;
   width: 100%;
   padding-bottom: 10px;
-  font-size: 30px;
+  font-size: 20px;
   font-family: 'Lato', sans-serif;
 }
 
 h1 {
   display:inline-block;
-  color: green;
   padding: 10px;
 }
 
 h2 {
   font-weight: bold;
   text-align: center;
-  margin: 20px;
   color: black;
   font-size: 30px;
-  color: #157A11;
+  color: #0F1B07;
   font-family: 'Lato', sans-serif;
+  width: 100px;
+  height: 100px;
+  float:left;
+  margin-top: 15px;
+  margin-left: 15px;
 }
 
 h3 {
@@ -50,50 +60,43 @@ h5 {
   text-align: center;
   padding: 5px;
   font-size: 20px;
-  color: dimgray;
+  color: #5C821A;
 }
 
 header li {
   display: inline-block;
   padding: 10px;
-}
-
-header img {
-  height:50px;
-  width: 300px;
+  margin: 15px 0;
+  font-size: 20px;
+  color: black;
+  text-align: center;
+  width: 100px;
+  height: 35px;
 }
 
 nav {
-  float: right;
+  margin-left: auto;
 }
 
-nav li:hover {
-  color: #157A11;
-}
-
-a {
+li a {
   color: #A9A9A9;
   text-decoration: none;
 }
 
-a:hover {
-  color: #157A11;
-}
-
-.header-highlight a{
-  color: #157A11
+li a:hover {
+  color: #5C821A;
 }
 
 .hero {
   width: 100%;
-  height: 400px;
-  border-bottom: solid 5px #157A11;
+  height: 350px;
+  border-bottom: solid 5px #0F1B07;
   background-color: black;
   position: relative;
 }
 
 .hero img {
-  height: 380px;
+  height: 350px;
   position: absolute;
   right:0;
   bottom: 0;
@@ -110,44 +113,12 @@ a:hover {
   text-align: center;
 }
 
-.quote {
-  font-style: italic;
-  margin-bottom: 50px;
-}
-.projects a {
-  height: 50px;
-  display: inline-block;
-}
-
 section.projects {
-  position: relative;
+  display: flex;
+  flex-wrap: wrap;
   height: auto;
-  width: 100%;
-  border-bottom: solid 5px #157A11;
-}
-
-.project-highlight-images {
-  display: inline-block;
-  width:100%;
-  vertical-align: top;
-  text-align: center;
-  margin: auto;
-}
-.project-highlight h3 {
-  margin: 20px auto;
-}
-.project-highlight img {
-  border-radius: 5%;
-  border: 5px solid #A9A9A9;
-  margin: 0 20px;
-  height: 300px;
-  width: 250px;
-}
-
-.project-highlight p {
-  margin: 20px auto;
-  vertical-align: top;
-  text-align: center;
+  align-items: center;
+  justify-content: center;
 }
 
 #wrapper .text {
@@ -161,54 +132,39 @@ section.projects {
 }
 
 .three-col {
-  width: 30%;
   display: inline-block;
   text-align: center;
   vertical-align: top;
-  margin: 10px 10px;
+  margin: 50px 40px;
   color: #EFEFEF;
 }
 
 .three-col img {
-  border-radius: 5%;
-  border: 5px solid #A9A9A9;
-  height: 250px;
-  width: 200px;
-  margin: 15px 0;
-}
-
-.two-col{
-  margin: auto;
-  width: 800px;
-  vertical-align: top;
-  padding: 20px 0;
+  border-radius: 25%;
+  border: 5px solid black;
+  height: 275px;
+  width: 210px;
 }
 
 section.about {
-  border-bottom: solid 3px #157A11;
+  background-color: #5C821A;
+
+}
+
+.two-col {
+  vertical-align: top;
+  padding: 20px 0;
+  display: flex;
+  flex-wrap: wrap;
+  height: auto;
+  align-items: center;
+  justify-content: center;
+  color: white;
 }
 
 section.bio {
   display: inline-block;
-  width: 325px;
-  text-align: justify;
-}
-
-section.experience-skills {
-  display: inline-block;
-  width: 325px;
-  vertical-align: top;
-  margin-left: 75px;
-  text-align: justify;
-}
-
-.skills ul {
-  list-style: circle inside;
-  display: inline-block;
-}
-
-.skills {
-  padding: 5px;
+  width: 350px;
 }
 
 .profile-picture img {
@@ -219,11 +175,58 @@ section.experience-skills {
   margin: 0 80px;
 }
 
-footer {
+.about-info p {
+  padding: 10px 0;
+}
+
+section.experience-skills {
+  display: inline-block;
+  width: 350px;
+  vertical-align: top;
+  margin-left: 75px;
   text-align: center;
 }
 
-footer article {
+.experience-skills ul {
+  list-style: circle inside;
+  display: inline-block;
+}
+
+.skills {
+  padding: 5px;
+}
+.experienc p {
+  margin-bottom: 5px;
+
+}
+
+.resume {
+  color: black;
+  margin-top: 20px;
+  text-align: center;
+}
+
+section.contact {
+  background-color: black;
+  color: #EFEFEF;
+}
+
+.contact article{
+  padding-bottom: 50px;
+  text-align: center;
+  height: 150px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.contact h2 {
+  color: #EFEFEF;
+}
+
+footer {
+  text-align: center;
   margin-bottom: 50px;
 }
 
@@ -231,6 +234,7 @@ footer li {
   padding: 0 10px;
   display: inline-block;
 }
+
 footer img{
     width:30px;
     height: 30px;
