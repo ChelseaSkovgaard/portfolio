@@ -32,6 +32,9 @@ header {
   font-weight: bold;
 }
 
+header img {
+  height: 50px;
+}
 h1 {
   display:inline-block;
   padding: 10px;
@@ -40,7 +43,7 @@ h1 {
 nav {
   position: absolute;
   right: 15px;
-  margin-top: 35px;
+  margin-top: 5px;
 }
 
 li a {
@@ -53,6 +56,8 @@ li a {
 li a:hover {
   color: #03A9F4;
 }
+
+/*Navigation */
 
 .fullscreen-nav {
   color: #FFFFFF;
@@ -67,30 +72,31 @@ li a:hover {
 }
 
 .about-nav {
-  height: 15%;
+  height: 25%;
   background-color: #E91E63;
+  text-align: center;
+  padding-top: 50px;
 }
 
 .work-nav {
-  height: 15%;
+  height: 25%;
   background-color: #03A9F4;
+  text-align: center;
+  padding-top: 50px;
 }
 
 .contact-nav {
-  height: 15%;
+  height: 25%;
   background-color:#FFC107;
+  text-align: center;
+  padding-top: 50px;
 }
 
 section.hero {
-  border-bottom: 10px solid #FFC107;
-  height: 300px;
-  background-color: #B3E5FC;
+  height: 500px;
 }
-
-div {
-  width: 100vw;
-  text-align: center;
-  padding: 50px 0 10px 0;
+.hero h1 {
+  width: 100%;
 }
 
 #clouds article {
@@ -109,11 +115,15 @@ div {
   margin-bottom: 10px;
 }
 
-
+/*ABOUT PAGE STYLING*/
 
 section.about {
   background-color: #E91E63;
   color: #FFFFFF;
+  height: auto;
+  margin: auto;
+  text-align: center;
+  width: 100vw;
 }
 
 .about h1 {
@@ -126,12 +136,7 @@ section.about {
   padding-top: 30px;
 }
 
-.about div {
-  width: 100%;
-  padding-top: 10px;
-}
-
-.about img {
+.intro img {
   border-radius: 50%;
   width: 200px;
   height: 200px;
@@ -153,11 +158,18 @@ section.about {
 .about h3, h4 {
   color: black;
 }
+.intro div {
+  text-align: center;
+  width: 80%;
+  margin: auto;
+  padding-top: 30px;
+}
 
-.about p {
+.experience p {
   color: black;
   text-align: center;
   margin: 10px 50px 10px;
+  width: 500px;
 }
 
 .about li {
@@ -167,11 +179,8 @@ section.about {
   margin: auto;
   color: black;
 }
-section.about{
-  height: auto;
-  margin: auto;
-  text-align: center;
-}
+
+/*PROJECTS PAGE STYLING*/
 
 section.projects {
   background-color: #03A9F4;
@@ -209,4 +218,44 @@ li img{
   visibility: visible;
   height: 500px;
   width: 100vw;
+}
+
+
+
+section.experience {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  padding-top: 50px;
+}
+.experience h3, h4 {
+  color: #FFFFFF;
+}
+.experience aside {
+  width: 40%;
+  display: inline-block;
+}
+
+.experience img {
+  height: 200px;
+  width: 300px;
+  margin-bottom: 40px;
+}
+
+.experience article {
+  display: inline-block;
+  text-align: left;
+}
+
+.experience article p {
+  width: 400px;
+  font-size: 16px;
+  margin-top: 10px;
+  text-align: left;
+}
+
+section.hidden.fullscreen-nav.visible {
+  background-color: #03A9F4;
 }
