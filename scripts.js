@@ -1,3 +1,6 @@
-$('.menu').on('click', function() {
-  $('header li.hidden').css("display", "inline-block");
+$(document).ready(function(){
+	$('#nav-icon3').click(function(){
+		$(this).toggleClass('open');
+    $('.hidden').toggleClass('visible');
+	});
 });

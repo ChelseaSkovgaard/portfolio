@@ -1,25 +1,35 @@
-/*Color Palette:
-Deep Green: #2C5214;
-Plants: #5C821A;
-New Growth: #C6D166;
-*/
+.dark-primary-color    { background: #FFA000; } /* amber */
+.default-primary-color { background: #FFC107; } /* yellow */
+.light-primary-color   { background: #FFECB3; } /* light yellow */
+.accent-color          { background: #E91E63; } /* hot pink */
+.primary-text-color    { color: #212121; } /* black */
+.secondary-text-color  { color: #757575; } /* dark gray */
+.divider-color         { border-color: #BDBDBD; } /* light gray */
+.accent-color-two       {color: #03A9F4;} /* blue */
+.white-text-color       {color: #FFFFFF;}
+
+.heading-font {
+font-family: 'Quicksand', sans-serif;
+font-weight: bold;
+}
+
 body {
-  background-color: #EFEFEF;
-  font-family: 'Source Sans Pro', sans-serif;
   font-size: 20px;
-  color: #A9A9A9;
+  border-color: #FFA000;
+  font-family: 'Raleway', sans-serif;
 }
 
 header {
   display:flex;
   align-items: center;
-  background-color: #EFEFEF;
-  border-bottom: 5px solid #0F1B07;
+  background-color: #FFA000;
+  border-bottom: 10px solid #FFC107;
   height: 70px;
   width: 100%;
   padding-bottom: 10px;
-  font-size: 20px;
-  font-family: 'Lato', sans-serif;
+  font-size: 30px;
+  font-family: 'Quicksand', sans-serif;
+  font-weight: bold;
 }
 
 h1 {
@@ -27,32 +37,33 @@ h1 {
   padding: 10px;
 }
 
+section {
+  border-bottom: 8px solid #FFC107;
+}
+
 h2 {
   font-weight: bold;
   text-align: center;
-  color: black;
   font-size: 30px;
-  color: #0F1B07;
-  font-family: 'Lato', sans-serif;
-  width: 100px;
-  height: 100px;
-  float:left;
-  margin-top: 15px;
-  margin-left: 15px;
+  width: 300px;
+  height: 40px;
+  margin: auto;
+  padding: 10px 0 0 0;
+  color: #03A9F4;
+  border-bottom: solid 3px #03A9F4;
 }
 
 h3 {
   font-weight: bold;
   text-align: center;
   padding-bottom: 10px;
-  color: black;
 }
 
 h4 {
   font-weight: bold;
   text-align: center;
   padding: 5px;
-  color: black;
+  color: #03A9F4;
 }
 
 h5 {
@@ -60,7 +71,6 @@ h5 {
   text-align: center;
   padding: 5px;
   font-size: 20px;
-  color: #5C821A;
 }
 
 header li {
@@ -76,44 +86,29 @@ header li {
 
 nav {
   margin-left: auto;
+  padding-right: 50px;
 }
 
 li a {
-  color: #A9A9A9;
   text-decoration: none;
+  color: #FFFFFF;
+  font-size: 25px;
+  font-weight: bold;
 }
 
 li a:hover {
-  color: #5C821A;
+  color: #03A9F4;
 }
 
 .hero {
-  width: 100%;
-  height: 350px;
-  border-bottom: solid 5px #0F1B07;
-  background-color: black;
-  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  height: 150px;
+  align-items: center;
+  justify-content: center;
 }
 
-.hero img {
-  height: 350px;
-  position: absolute;
-  right:0;
-  bottom: 0;
-}
-
-.hero aside {
-  height: 300px;
-  width: 400px;
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  display: inline-block;
-  color: white;
-  text-align: center;
-}
-
-section.projects {
+.projects {
   display: flex;
   flex-wrap: wrap;
   height: auto;
@@ -129,6 +124,7 @@ section.projects {
 
 #wrapper:hover .text {
   visibility:visible;
+  color: #FFFFFF;
 }
 
 .three-col {
@@ -136,19 +132,13 @@ section.projects {
   text-align: center;
   vertical-align: top;
   margin: 50px 40px;
-  color: #EFEFEF;
 }
 
 .three-col img {
   border-radius: 25%;
-  border: 5px solid black;
+  border: 5px solid #FFA000;
   height: 275px;
   width: 210px;
-}
-
-section.about {
-  background-color: #5C821A;
-
 }
 
 .two-col {
@@ -159,10 +149,9 @@ section.about {
   height: auto;
   align-items: center;
   justify-content: center;
-  color: white;
 }
 
-section.bio {
+article.pic-skills {
   display: inline-block;
   width: 350px;
 }
@@ -175,29 +164,13 @@ section.bio {
   margin: 0 80px;
 }
 
-.about-info p {
-  padding: 10px 0;
-}
-
-section.experience-skills {
+article.about {
   display: inline-block;
   width: 350px;
   vertical-align: top;
   margin-left: 75px;
-  text-align: center;
-}
-
-.experience-skills ul {
-  list-style: circle inside;
-  display: inline-block;
-}
-
-.skills {
-  padding: 5px;
-}
-.experienc p {
-  margin-bottom: 5px;
-
+  text-align: left;
+  font-size: 18px;
 }
 
 .resume {
@@ -206,28 +179,18 @@ section.experience-skills {
   text-align: center;
 }
 
-section.contact {
-  background-color: black;
-  color: #EFEFEF;
-}
-
 .contact article{
   padding-bottom: 50px;
   text-align: center;
-  height: 150px;
+  height: 50px;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
 }
 
-.contact h2 {
-  color: #EFEFEF;
-}
-
 footer {
   text-align: center;
-  margin-bottom: 50px;
 }
 
 footer li {
