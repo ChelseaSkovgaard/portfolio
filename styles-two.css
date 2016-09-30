@@ -114,6 +114,7 @@ section.hero {
 .hero p, h3 {
   font-size: 25px;
 }
+
 /*ABOUT PAGE STYLING*/
 
 .about {
@@ -176,12 +177,19 @@ section.intro {
   margin-left: 20px;
 }
 
-.experience li, p {
+.experience li {
   color: black;
   text-align: left;
   margin: 10px 50px 10px;
   font-size: 16px;
 }
+
+/*.experience p {
+  color: black;
+  text-align: left;
+  margin: 10px 50px 10px;
+  font-size: 16px;
+}*/
 
 .skills li {
   display: inline-block;
