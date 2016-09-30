@@ -176,7 +176,7 @@ section.intro {
   margin-left: 20px;
 }
 
-.experience p {
+.experience li, p {
   color: black;
   text-align: left;
   margin: 10px 50px 10px;
